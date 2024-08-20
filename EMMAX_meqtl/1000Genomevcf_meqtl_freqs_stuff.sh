@@ -93,7 +93,7 @@ bcftools merge isec_KHS_1kg/0002.vcf.gz isec_KHS_1kg/0003.vcf.gz -o common_KHS_1
 bcftools merge isec_Baka_1kg/0002.vcf.gz isec_Baka_1kg/0003.vcf.gz -o common_Baka_1kg.vcf.gz
 bcftools merge isec_Himba_1kg/0002.vcf.gz isec_Himba_1kg/0003.vcf.gz -o common_Himba_1kg.vcf.gz
 
-###fst and frequency example in himba
+###fst and frequency example in baka
 plink --vcf  common_Baka_1kg.vcf.gz --make-bed --out  common_Baka_1kg
 paste Baka_inds Baka_inds | awk '{print $1, $2, "Baka"}' > Baka_plink_inds.txt
 paste 1kg_inds 1kg_inds | awk '{print $1, $2, "1kg"}' > 1kg_plink_inds.txt
