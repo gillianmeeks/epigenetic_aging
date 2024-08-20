@@ -1,5 +1,5 @@
 #!/bin/sh
-
+##TEST git####
 ##allowed for nas here
 #SBATCH --ntasks=1
 #SBATCH --time=48:00:00
